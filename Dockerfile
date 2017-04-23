@@ -20,11 +20,11 @@ RUN apt-get install -y \
   openjdk-8-jdk \
   --no-install-recommends
 
-# Sets language to UTF8
+# Set language to UTF8
 ENV LANG en_US.UTF-8
 RUN locale-gen $LANG
 
-# Clean Up Apt-get
+# Clean up apt-get
 RUN rm -rf /var/lib/apt/lists/*
 RUN apt-get clean
 
