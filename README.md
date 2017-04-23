@@ -1,5 +1,13 @@
 # Build Environment Android
-Light weight build environment for Android projects
+Light weight build environment for Android projects.
+
+It includes:
+- OpenJDK 8
+- Android SDK
+- Platform Tools
+- Build Tools
+- Android Support Library
+- Google Play Services
 
 ## Build image
 ```
