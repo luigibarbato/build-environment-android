@@ -1,5 +1,7 @@
 FROM ubuntu:16.04
 
+MAINTAINER Anton Musichin
+
 # Update apt-get
 RUN rm -rf /var/lib/apt/lists/*
 RUN apt-get update
