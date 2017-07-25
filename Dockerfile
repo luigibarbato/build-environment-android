@@ -38,6 +38,7 @@ RUN echo y | /usr/local/android-sdk/tools/bin/sdkmanager \
   "extras;google;m2repository" \
   "extras;android;m2repository" \
   "platforms;android-25" \
+  "platforms;android-26" \
   "build-tools;25.0.2" \
   "build-tools;25.0.3" \
   "build-tools;26.0.0" \
