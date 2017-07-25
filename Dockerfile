@@ -41,7 +41,6 @@ RUN echo y | /usr/local/android-sdk/tools/bin/sdkmanager \
   "platforms;android-26" \
   "build-tools;25.0.2" \
   "build-tools;25.0.3" \
-  "build-tools;26.0.0" \
   "build-tools;26.0.1"
 ENV ANDROID_HOME /usr/local/android-sdk
 ENV PATH $PATH:$ANDROID_HOME/tools
