@@ -40,6 +40,7 @@ RUN echo y | /usr/local/android-sdk/tools/bin/sdkmanager \
   "extras;google;google_play_services" \
   "platforms;android-25" \
   "platforms;android-26" \
+  "platforms;android-27" \
   "build-tools;25.0.2" \
   "build-tools;25.0.3" \
   "build-tools;26.0.1" \
