@@ -44,11 +44,12 @@ RUN echo y | /usr/local/android-sdk/tools/bin/sdkmanager \
   "build-tools;25.0.2" \
   "build-tools;25.0.3" \
   "build-tools;26.0.1" \
-  "build-tools;26.0.2"
+  "build-tools;26.0.2" \
+  "build-tools;27.0.0"
 ENV ANDROID_HOME /usr/local/android-sdk
 ENV PATH $PATH:$ANDROID_HOME/tools
 ENV PATH $PATH:$ANDROID_HOME/platform-tools
-ENV PATH $PATH:$ANDROID_HOME/build-tools/26.0.2
+ENV PATH $PATH:$ANDROID_HOME/build-tools/27.0.0
 RUN chmod -R a+rx $ANDROID_HOME
 
 # Prepare project directory
