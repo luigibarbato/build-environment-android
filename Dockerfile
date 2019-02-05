@@ -37,12 +37,12 @@ RUN echo y | /usr/local/android-sdk/tools/bin/sdkmanager \
   "platform-tools" \
   "extras;google;m2repository" \
   "extras;android;m2repository" \
-  "platforms;android-27" \
-  "build-tools;27.0.3"
+  "platforms;android-28" \
+  "build-tools;28.0.3"
 ENV ANDROID_HOME /usr/local/android-sdk
 ENV PATH $PATH:$ANDROID_HOME/tools
 ENV PATH $PATH:$ANDROID_HOME/platform-tools
-ENV PATH $PATH:$ANDROID_HOME/build-tools/27.0.3
+ENV PATH $PATH:$ANDROID_HOME/build-tools/28.0.3
 RUN chmod -R a+rx $ANDROID_HOME
 
 # Prepare project directory
