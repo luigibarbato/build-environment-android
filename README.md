@@ -21,7 +21,7 @@ $ docker run -it musichin/build-environment-android /bin/bash
 
 ## Build Android project
 ```
-$ docker run -v $PWD:/project -t musichin/build-environment-android /bin/bash gradlew assembleRelease
+$ docker run -v $PWD:/ -t musichin/build-environment-android /bin/bash gradlew assembleRelease
 ```
 
 # License
