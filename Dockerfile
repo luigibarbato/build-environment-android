@@ -29,7 +29,7 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN apt-get clean
 
 # Install Android SDK
-RUN wget -q https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip -O sdk-tools-linux.zip
+RUN wget -q https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip -O sdk-tools-linux.zip
 RUN unzip -q sdk-tools-linux.zip -d /usr/local/android-sdk
 RUN rm sdk-tools-linux.zip
 RUN echo y | /usr/local/android-sdk/tools/bin/sdkmanager \
@@ -44,9 +44,3 @@ ENV PATH $PATH:$ANDROID_HOME/tools
 ENV PATH $PATH:$ANDROID_HOME/platform-tools
 ENV PATH $PATH:$ANDROID_HOME/build-tools/28.0.3
 RUN chmod -R a+rx $ANDROID_HOME
-
-# Prepare project directory
-ENV PROJECT /project
-RUN mkdir $PROJECT
-WORKDIR $PROJECT
-RUN echo "sdk.dir=$ANDROID_HOME" > local.properties
